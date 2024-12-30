@@ -8,20 +8,24 @@ A repository dedicated to exploring, learning, and revising fundamental and adva
 
 ```plaintext
 my-digital-playground/
-├── README.md                  # Overview of the repository
+├── README.md                  # Overview
 ├── LICENSE                    # License information (optional)
 ├── docs/                      # Notes and guides
 ├── modules/                   # RTL designs and testbenches
-│   ├── AND_gate/
-│   │   ├── AND_gate.sv        # RTL design file
-│   │   ├── AND_gate_tb.sv     # Testbench
-│   │   └── waveform/          # Waveform files or screenshots
-│   ├── full_adder/
-│   │   ├── full_adder.sv
-│   │   ├── full_adder_tb.sv
-│   │   └── waveform/
+│   ├── AND/
+│   │   ├── AND.sv             # RTL design file
+│   │   ├── AND_tb.sv          # Testbench
+│   │   └── AND_dumps/         # Waveform files or screenshots
+|   |       ├── vcd/           # Waveform (s)
+|   |       └── jpg/           # Screenshot (s)
+│   ├── FULL_ADDER/
+│   │   ├── FULL_ADDER.sv
+│   │   ├── FULL_ADDER_tb.sv
+│   │   └── FULL_ADDER_dumps/
+|   |       ├── vcd/           # Waveform (s)
+|   |       └── jpg/           # Screenshot (s)
 │   └── ...
-├── scripts/                   # Simulation or synthesis scripts
+├── scripts/                   # Simulation scripts
 ├── results/                   # Simulation or synthesis results
 └── tools/                     # Custom tools and utilities
 ```
@@ -43,11 +47,12 @@ my-digital-playground/
 This repository will grow over time, but here’s an example of the types of modules included:
 
 - **Basic Logic Gates**: AND, OR, NOT  
-- **Arithmetic Units**: Full adder, 4-bit adder  
-- **Combinational Circuits**: Multiplexers, decoders  
-- **Sequential Circuits**: Flip-flops, shift registers, counters  
-- **Memory Modules**: Dual-port RAM  
-- **Custom Modules**: FSMs, PWM generators, etc.  
+- **Arithmetic Units**: Half adder, Full adder, Arithmetic Logic Unit (ALU)
+- **Combinational Circuits**: Multiplexers, decoders, encoders, 7-segment BCD decoder  
+- **Sequential Circuits**: Flip-flops, shift registers, counters
+- **Memory Modules**: Single-port RAM, Dual-port RAM, synchronous FIFO, asynchronous-fifo
+- **Custom Modules**: FSMs, Sequence detectors, etc.  
+- **Processing Units**: Single cycle processor, RISC-V core, DMA engine
 
 ---
 
@@ -57,7 +62,7 @@ This repository will grow over time, but here’s an example of the types of mod
    ```bash
    git clone https://github.com/<your-username>/my-digital-playground.git
    ```
-2. Navigate to the module of interest, e.g., `modules/full_adder/`.
+2. Navigate to the module of interest, e.g., `modules/ALU/`.
 3. Open the RTL design and testbench files in your favorite editor.
 4. Use the provided simulation scripts (or your own setup) to simulate the design.
 5. Analyze the results and waveforms for verification.
@@ -67,6 +72,14 @@ This repository will grow over time, but here’s an example of the types of mod
 ## Contributing
 
 This repository is a personal project, but contributions are welcome! If you’d like to add new designs or improve existing ones, feel free to submit a pull request.
+
+---
+
+## About Owner
+
+```html
+https://www.linkedin.com/in/ksaad3747/
+```
 
 ---
 

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>my-digital-playground</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="my-digital-playground">my-digital-playground</h1>
+<p>A repository dedicated to exploring, learning, and revising fundamental and advanced concepts of digital design. This repository contains a collection of RTL designs written in Verilog/SystemVerilog/HDL, with testbenches to verify their functionality. This repository serves as a reference for RTL concepts and best practices, including verification and documentation.</p>
+<hr>
+<h2 id="repository-structure">Repository Structure</h2>
+<pre><code class="language-plaintext">my-digital-playground/
+├── README.md                  # Overview
+├── LICENSE                    # License information (optional)
+├── docs/                      # Notes and guides
+├── modules/                   # RTL designs and testbenches
+│   ├── AND/
+│   │   ├── AND.sv             # RTL design file
+│   │   ├── AND_tb.sv          # Testbench
+│   │   └── AND_dumps/         # Waveform files or screenshots
+|   |       ├── vcd/           # Waveform (s)
+|   |       └── jpg/           # Screenshot (s)
+│   ├── FULL_ADDER/
+│   │   ├── FULL_ADDER.sv
+│   │   ├── FULL_ADDER_tb.sv
+│   │   └── FULL_ADDER_dumps/
+|   |       ├── vcd/           # Waveform (s)
+|   |       └── jpg/           # Screenshot (s)
+│   └── ...
+├── scripts/                   # Simulation scripts
+├── results/                   # Simulation or synthesis results
+└── tools/                     # Custom tools and utilities
+</code></pre>
+<hr>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>RTL Designs</strong>: A variety of digital circuits, from basic gates to more complex modules like adders, multiplexers, and memory modules.</li>
+<li><strong>Testbenches</strong>: Comprehensive testbenches for verifying each design's functionality.</li>
+<li><strong>Waveform Analysis</strong>: Optional waveform outputs for visualizing simulation results.</li>
+<li><strong>Reusable Scripts</strong>: Common scripts for simulating, compiling, or synthesizing the designs.</li>
+<li><strong>Documentation</strong>: Clear documentation for each module, including usage instructions and design descriptions.</li>
+</ul>
+<hr>
+<h2 id="modules-included">Modules Included</h2>
+<p>This repository will grow over time, but here’s an example of the types of modules included:</p>
+<ul>
+<li><strong>Basic Logic Gates</strong>: AND, OR, NOT</li>
+<li><strong>Arithmetic Units</strong>: Half adder, Full adder, Arithmetic Logic Unit (ALU)</li>
+<li><strong>Combinational Circuits</strong>: Multiplexers, decoders, encoders, 7-segment BCD decoder</li>
+<li><strong>Sequential Circuits</strong>: Flip-flops, shift registers, counters</li>
+<li><strong>Memory Modules</strong>: Single-port RAM, Dual-port RAM, synchronous FIFO, asynchronous-fifo</li>
+<li><strong>Custom Modules</strong>: FSMs, Sequence detectors, etc.</li>
+<li><strong>Processing Units</strong>: Single cycle processor, RISC-V core, DMA engine</li>
+</ul>
+<hr>
+<h2 id="how-to-use">How to Use</h2>
+<ol>
+<li>Clone the repository:<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/&lt;your-username&gt;/my-digital-playground.git
+</code></pre>
+</li>
+<li>Navigate to the module of interest, e.g., <code>modules/ALU/</code>.</li>
+<li>Open the RTL design and testbench files in your favorite editor.</li>
+<li>Use the provided simulation scripts (or your own setup) to simulate the design.</li>
+<li>Analyze the results and waveforms for verification.</li>
+</ol>
+<hr>
+<h2 id="contributing">Contributing</h2>
+<p>This repository is a personal project, but contributions are welcome! If you’d like to add new designs or improve existing ones, feel free to submit a pull request.</p>
+<hr>
+<h2 id="about-owner">About Owner</h2>
+<pre><code class="language-html">https://www.linkedin.com/in/ksaad3747/
+</code></pre>
+<hr>
+<h2 id="license">License</h2>
+<p>This repository is license-free. Feel free to use it as you wish.</p>
+
+            
+            
+        </body>
+        </html>
