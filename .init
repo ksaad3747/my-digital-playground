@@ -1,0 +1,4 @@
+#!/bin/bash
+# Set the root directory to the current directory
+export ROOT_DIR=$(pwd)
+echo "ROOT_DIR set to $ROOT_DIR"
